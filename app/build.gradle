@@ -32,6 +32,11 @@ dependencies {
     implementation libraries.appCompat
     implementation libraries.constraintLayout
 
+    implementation libraries.dagger
+    implementation libraries.daggerSupport
+    kapt libraries.daggerProcessor
+    kapt libraries.daggerAndroidApt
+
     testImplementation libraries.junit
 
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
