@@ -1,7 +1,8 @@
-package dagger2.jsc.com.dagger2kotlin
+package com.jsc.dagger2
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import com.jsc.dagger2.R
 
 class MainActivity : AppCompatActivity() {
 

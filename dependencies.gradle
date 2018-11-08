@@ -1,0 +1,46 @@
+ext {
+    versions = [
+            java                  : JavaVersion.VERSION_1_8,
+            compileSdk            : 27,
+            targetSdk             : 27,
+            minSdk                : 19,
+            buildTools            : '28.0.3',
+            kotlin                : '1.2.71',
+            kotlinter             : '1.10.0',
+
+            // Main dependencies
+            support               : '27.1.0',
+            multidex              : '1.0.1',
+            constraintLayout      : '1.1.0',
+            androidKtx            : '1.0.0-alpha1',
+            dagger                : '2.14.1',
+
+            // For testing
+            junit                 : '4.12'
+    ]
+
+    libraries = [
+            kotlin                : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${versions.kotlin}",
+
+            multidex              : "com.android.support:multidex:${versions.multidex}",
+            appCompat             : "com.android.support:appcompat-v7:${versions.support}",
+            annotations           : "com.android.support:support-annotations:${versions.support}",
+            recyclerview          : "com.android.support:recyclerview-v7:${versions.support}",
+            design                : "com.android.support:design:${versions.support}",
+            constraintLayout      : "com.android.support.constraint:constraint-layout:${versions.constraintLayout}",
+
+            androidKtx            : "androidx.core:core-ktx:${versions.androidKtx}",
+
+            dagger                : "com.google.dagger:dagger:${versions.dagger}",
+            daggerSupport         : "com.google.dagger:dagger-android-support:${versions.dagger}",
+            daggerProcessor       : "com.google.dagger:dagger-compiler:${versions.dagger}",
+            daggerAndroidApt      : "com.google.dagger:dagger-android-processor:${versions.dagger}",
+
+            // For testing
+            junit                 : "junit:junit:$versions.junit",
+            expressoCore          : "com.android.support.test.espresso:espresso-core:${versions.expresso}",
+            roomTest              : "android.arch.persistence.room:testing:${versions.room}",
+            truth                 : "com.google.truth:truth:$versions.truth",
+            mockito               : "org.mockito:mockito-core:$versions.mockito"
+    ]
+}
